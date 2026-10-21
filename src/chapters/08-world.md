@@ -33,7 +33,7 @@ In 1948 Haile Selassie granted 500 acres at Shashamane for people of the African
 <div class="eyebrow">Kingston</div>
 <h2 class="h-mid">Where it all <span class="acc-r">grew</span></h2>
 
-After Pinnacle's destruction, Rastas settled in West Kingston yards such as Back-O-Wall, which the government bulldozed in 1966 to build Tivoli Gardens. The sound systems, studios and yards of Kingston carried the message out to the world.
+After Pinnacle's destruction, Rastas settled in West Kingston yards such as Back-O-Wall, whose residents were moved out in 1966 to build Tivoli Gardens. The sound systems, studios and yards of Kingston carried the message out to the world.
 
 </div><div>
 

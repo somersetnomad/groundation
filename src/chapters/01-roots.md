@@ -51,7 +51,7 @@ Two strange books circulated alongside the Bible. *The Holy Piby*, compiled by R
 
 Around 1940 Howell bought land at Pinnacle, near Sligoville in St Catherine, and built a self-sufficient community of several hundred followers. Residents farmed, refused to pay taxes to the colonial government, and grew cannabis as a cash crop and sacrament.
 
-Police raided Pinnacle in 1941 and repeatedly afterwards; a final raid in 1954 broke the commune up. Its scattered residents moved into the poor districts of West Kingston, such as Back-O-Wall, where the movement grew, radicalised and became visible. Many scholars trace the first dreadlocks to this generation of young urban Rastas in the late 1940s and 1950s.
+Police raided Pinnacle in 1941 and repeatedly afterwards. A raid in 1954 largely destroyed it, and police cleared the last residents in 1958. Its scattered residents moved into the poor districts of West Kingston, such as Back-O-Wall, where the movement grew, radicalised and became visible. Many scholars trace the first dreadlocks to this generation of young urban Rastas in the late 1940s and 1950s.
 
 Pinnacle has since been protected as a heritage site, one outcome of the government's work on redress after Coral Gardens.
 
