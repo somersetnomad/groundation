@@ -1,11 +1,11 @@
-@font-face{font-family:"Big Shoulders Display";font-weight:600;font-style:normal;font-display:swap;src:url(/assets/fonts/big-shoulders-display-latin-600-normal.woff2) format("woff2")}
-@font-face{font-family:"Big Shoulders Display";font-weight:800;font-style:normal;font-display:swap;src:url(/assets/fonts/big-shoulders-display-latin-800-normal.woff2) format("woff2")}
-@font-face{font-family:"Big Shoulders Display";font-weight:900;font-style:normal;font-display:swap;src:url(/assets/fonts/big-shoulders-display-latin-900-normal.woff2) format("woff2")}
-@font-face{font-family:"Literata";font-weight:400;font-style:normal;font-display:swap;src:url(/assets/fonts/literata-latin-400-normal.woff2) format("woff2")}
-@font-face{font-family:"Literata";font-weight:400;font-style:italic;font-display:swap;src:url(/assets/fonts/literata-latin-400-italic.woff2) format("woff2")}
-@font-face{font-family:"Literata";font-weight:600;font-style:normal;font-display:swap;src:url(/assets/fonts/literata-latin-600-normal.woff2) format("woff2")}
-@font-face{font-family:"Literata";font-weight:600;font-style:italic;font-display:swap;src:url(/assets/fonts/literata-latin-600-italic.woff2) format("woff2")}
-@font-face{font-family:"Literata";font-weight:700;font-style:normal;font-display:swap;src:url(/assets/fonts/literata-latin-700-normal.woff2) format("woff2")}
+@font-face{font-family:"Big Shoulders Display";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/big-shoulders-display-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Big Shoulders Display";font-weight:800;font-style:normal;font-display:swap;src:url(../fonts/big-shoulders-display-latin-800-normal.woff2) format("woff2")}
+@font-face{font-family:"Big Shoulders Display";font-weight:900;font-style:normal;font-display:swap;src:url(../fonts/big-shoulders-display-latin-900-normal.woff2) format("woff2")}
+@font-face{font-family:"Literata";font-weight:400;font-style:normal;font-display:swap;src:url(../fonts/literata-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Literata";font-weight:400;font-style:italic;font-display:swap;src:url(../fonts/literata-latin-400-italic.woff2) format("woff2")}
+@font-face{font-family:"Literata";font-weight:600;font-style:normal;font-display:swap;src:url(../fonts/literata-latin-600-normal.woff2) format("woff2")}
+@font-face{font-family:"Literata";font-weight:600;font-style:italic;font-display:swap;src:url(../fonts/literata-latin-600-italic.woff2) format("woff2")}
+@font-face{font-family:"Literata";font-weight:700;font-style:normal;font-display:swap;src:url(../fonts/literata-latin-700-normal.woff2) format("woff2")}
 
 /* Layout: a night groundation. Smoky earth ground, firelight text, the red-gold-green carried as bold poster bands
    in the style of Kingston sound-system and dance posters; long reading columns in between. Single dark world by design. */

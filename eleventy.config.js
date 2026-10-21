@@ -42,6 +42,20 @@ module.exports = function (eleventyConfig) {
     return `<figure class="${cls} photo-pending"><div class="photo-ph" role="img" aria-label="${esc(m.alt)}"><span>${esc(m.alt)}</span></div><figcaption>${esc(m.caption)}</figcaption></figure>`;
   });
 
+
+  /* Make every internal link relative so the site works when opened straight from a folder, as well as on any host. */
+  eleventyConfig.addTransform("relative-links", function (content) {
+    const out = this.page.outputPath;
+    if (!out || !out.endsWith(".html")) return content;
+    const rel = path.relative(path.dirname(out), "_site").split(path.sep).join("/");
+    const prefix = rel ? rel + "/" : "";
+    return content.replace(/(\s(?:href|src))="\/(?!\/)([^"#?]*)([^"]*)"/g, (m, attr, p, rest) => {
+      let target = p;
+      if (target === "" || target.endsWith("/")) target += "index.html";
+      return `${attr}="${prefix}${target}${rest}"`;
+    });
+  });
+
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v).replace(/</g, "\\u003c"));
   eleventyConfig.addFilter("ld", (type, name, headline, desc, url, lang, pub) => JSON.stringify({ "@context": "https://schema.org", "@type": type, name, headline, description: desc, url, inLanguage: lang, publisher: { "@type": "Organization", name: pub } }).replace(/</g, "\\u003c"));
   eleventyConfig.addFilter("head", (arr, n) => (arr || []).slice(0, n));
