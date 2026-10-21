@@ -1,0 +1,11 @@
+<div class="era-rail" role="tablist" aria-label="Eras of Rastafari music" id="eraTabs">
+{%- for m in music %}
+<button type="button" class="era-tab" role="tab" id="etab-{{ m.id }}" aria-controls="era-{{ m.id }}" aria-selected="{{ 'true' if loop.first else 'false' }}" tabindex="{{ '0' if loop.first else '-1' }}" style="--ec:{{ m.colour }}"><span class="era-n tabular">{{ loop.index | pad }}</span><span class="era-when">{{ m.era }}</span><span class="era-name">{{ m.name }}</span></button>
+{%- endfor %}
+</div>
+{%- for m in music %}
+<div class="era-panel" role="tabpanel" id="era-{{ m.id }}" aria-labelledby="etab-{{ m.id }}" tabindex="0" style="--ec:{{ m.colour }}"{% if not loop.first %} hidden{% endif %}>
+<div><span class="era-big">{{ m.era }}</span><h2 class="era-title">{{ m.name }}</h2></div>
+<div><p class="lede">{{ m.text }}</p><div class="listen"><h3>Listen for</h3><ul>{% for t in m.listen %}<li>{{ t }}</li>{% endfor %}</ul></div></div>
+</div>
+{%- endfor %}

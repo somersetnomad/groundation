@@ -59,6 +59,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("json", (v) => JSON.stringify(v).replace(/</g, "\\u003c"));
   eleventyConfig.addFilter("ld", (type, name, headline, desc, url, lang, pub) => JSON.stringify({ "@context": "https://schema.org", "@type": type, name, headline, description: desc, url, inLanguage: lang, publisher: { "@type": "Organization", name: pub } }).replace(/</g, "\\u003c"));
   eleventyConfig.addFilter("head", (arr, n) => (arr || []).slice(0, n));
+  eleventyConfig.addFilter("numberWord", (n) => (["Zero","One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Eleven","Twelve","Thirteen","Fourteen","Fifteen","Sixteen","Seventeen","Eighteen","Nineteen","Twenty"][n] || String(n)));
   eleventyConfig.addFilter("pad", (n) => String(n).padStart(2, "0"));
   eleventyConfig.addFilter("absolute", (p, base) => (base || "").replace(/\/$/, "") + p);
   eleventyConfig.addFilter("dateIso", (d) => new Date(d).toISOString().slice(0, 10));

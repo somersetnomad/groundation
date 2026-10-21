@@ -90,6 +90,8 @@ function tabs(listSel, onShow) {
 }
 tabs("#mTabs", function (i) { if (!hasGsap()) return; var p = $$(".mansion")[i]; if (!p) return; gsap.fromTo($(".mansion-badge svg", p), { rotate: -25, scale: .8 }, { rotate: 0, scale: 1, duration: .8, ease: "back.out(1.6)" }); gsap.fromTo($$(".facts dt, .facts dd", p), { y: 12, opacity: .2 }, { y: 0, opacity: 1, duration: .45, stagger: .03, ease: "power2.out" }); });
 
+tabs("#eraTabs", function (i) { if (!hasGsap()) return; var p = $$(".era-panel")[i]; if (p) gsap.fromTo(p.children, { y: 24, opacity: .2 }, { y: 0, opacity: 1, duration: .5, stagger: .08, ease: "power3.out" }); });
+
 var showPlace = tabs("#placeList", function (i) {
   var id = $$("#placeList [role=tab]")[i].getAttribute("aria-controls").replace("place-", "");
   $$("#pins .pin").forEach(function (g) { g.classList.toggle("on", g.getAttribute("data-id") === id); });

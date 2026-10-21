@@ -29,7 +29,7 @@ permalink: /
 
 <section class="sec" aria-labelledby="h-chapters">
 <div class="in">
-<div class="sec-head"><div class="eyebrow">The guide</div><h2 id="h-chapters">Eleven <span class="acc-y">chapters</span></h2></div>
+<div class="sec-head"><div class="eyebrow">The guide</div><h2 id="h-chapters">{{ collections.chapters.length | numberWord }} <span class="acc-y">chapters</span></h2></div>
 <ol class="ch-grid">
 {%- for ch in collections.chapters %}
 <li class="ch-card reveal"><a href="{{ ch.url }}"><span class="ch-num tabular">{{ ch.data.order | pad }}</span><span class="ch-label">{{ ch.data.navLabel }}</span><span class="ch-desc">{{ ch.data.description }}</span><span class="ch-go" aria-hidden="true">→</span></a></li>
