@@ -1,0 +1,1 @@
+{ "layout": "layouts/chapter.njk", "permalink": "/{{ key }}/", "tags": [] }

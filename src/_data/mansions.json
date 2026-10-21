@@ -1,0 +1,97 @@
+[
+  {
+    "id": "ny",
+    "name": "Nyabinghi",
+    "colour": "var(--green)",
+    "aka": "Haile Selassie I Theocracy Reign Order of Nyabinghi",
+    "intro": "The oldest and, for many, the orthodox core of the faith. There is no founder and no single leader; authority rests with councils of elders and with the Issembly itself.",
+    "facts": [
+      {
+        "label": "Name",
+        "text": "Taken from a tradition of anti-colonial resistance in East Africa, associated with the spirit-queen Nyabinghi and the healer-leader Muhumusa."
+      },
+      {
+        "label": "Belief",
+        "text": "Haile Selassie I is Jah, the living God. Africa, and Ethiopia above all, is Zion; the West is Babylon."
+      },
+      {
+        "label": "Practice",
+        "text": "Issemblies or Groundations: gatherings that can last a week, with drumming, chanting, reasoning and prayer around a tabernacle fire."
+      },
+      {
+        "label": "Holy days",
+        "text": "Ethiopian Christmas (7 January), Grounation Day (21 April), Selassie's birthday (23 July) and the Coronation (2 November), among others."
+      },
+      {
+        "label": "Today",
+        "text": "Nyabinghi Issemblies are open to Rastas of every house, which makes the order a meeting ground for the whole movement."
+      }
+    ]
+  },
+  {
+    "id": "bo",
+    "name": "Bobo Shanti",
+    "colour": "var(--gold)",
+    "aka": "Ethiopia Africa Black International Congress (EABIC)",
+    "intro": "The most disciplined of the Mansions, recognisable by its high-wrapped turbans and robes. “Bobo” means black; “Shanti” refers to the Ashanti of Ghana.",
+    "facts": [
+      {
+        "label": "Founded",
+        "text": "1958, by Charles Edwards, known as Prince Emmanuel (died 1994), after a mass convention in West Kingston."
+      },
+      {
+        "label": "Belief",
+        "text": "A holy trinity: Marcus Garvey as prophet, Prince Emmanuel as High Priest, and Haile Selassie I as King."
+      },
+      {
+        "label": "Home",
+        "text": "A commune at Bobo Hill, Bull Bay, east of Kingston, run on strict rules of worship, work and purity."
+      },
+      {
+        "label": "Practice",
+        "text": "A strict Sabbath from Friday to Saturday sundown. Members make and sell brooms, a symbol of cleanliness and self-reliance. Women observe long periods of separation tied to purity laws."
+      },
+      {
+        "label": "Causes",
+        "text": "Among the most outspoken voices for repatriation to Africa and for reparations for slavery."
+      },
+      {
+        "label": "Culture",
+        "text": "In the 1990s dancehall artists such as Sizzla and Capleton brought Bobo imagery to a global audience."
+      }
+    ]
+  },
+  {
+    "id": "tt",
+    "name": "Twelve Tribes",
+    "colour": "var(--red)",
+    "aka": "Twelve Tribes of Israel",
+    "intro": "The most open of the Mansions, and the one that drew in many of reggae's biggest names. Members do not have to wear locks, and people of any race may join.",
+    "facts": [
+      {
+        "label": "Founded",
+        "text": "1968, by Vernon Carrington (1936–2005), known as Prophet Gad. Headquarters on Hope Road, Kingston."
+      },
+      {
+        "label": "Tribes",
+        "text": "Each member belongs to one of the twelve tribes of Israel according to their birth month. Bob Marley, born in February, belonged to Joseph."
+      },
+      {
+        "label": "Belief",
+        "text": "Haile Selassie revealed the character of Christ in kingly form. Members place more weight on Jesus Christ than other houses do."
+      },
+      {
+        "label": "Practice",
+        "text": "Read the Bible a chapter a day, from Genesis to Revelation, which takes about three and a half years."
+      },
+      {
+        "label": "Members",
+        "text": "Bob Marley, Dennis Brown, Freddie McGregor and Judy Mowatt, among many musicians."
+      },
+      {
+        "label": "Africa",
+        "text": "Twelve Tribes members settled at Shashamane and remain part of the community there."
+      }
+    ]
+  }
+]

@@ -1,0 +1,16 @@
+---
+layout: layouts/base.njk
+---
+<article class="prose-page article">
+  <div class="in">
+    <div class="eyebrow"><a href="/articles/">Articles</a>{% if topic %} · {{ topic }}{% endif %}</div>
+    <h1>{{ title }}</h1>
+    <p class="updated">{{ page.date | dateNice }}{% if author %} · {{ author }}{% endif %}</p>
+    {% if summary %}<p class="lede read">{{ summary }}</p>{% endif %}
+    {% if image %}{% photo image, "photo-wide" %}{% endif %}
+    <div class="prose">
+{{ content | safe }}
+    </div>
+    <p class="note"><a href="/articles/">← All articles</a></p>
+  </div>
+</article>

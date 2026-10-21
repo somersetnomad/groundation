@@ -1,0 +1,12 @@
+<section class="sec alt" id="share" aria-labelledby="h-share">
+<div class="in">
+<div class="sec-head"><div class="eyebrow">Pass it on</div><h2 id="h-share">Make a <span class="acc-y">share card</span></h2><p class="lede read muted">Pick a fact. The card is drawn in your browser. Save the image, or copy the text.</p></div>
+<div class="share">
+<div class="share-list" id="shareList" role="group" aria-label="Choose a fact">
+{%- for f in facts %}<button type="button" class="share-opt" aria-pressed="{{ 'true' if loop.first else 'false' }}" data-i="{{ loop.index0 }}">{{ f }}</button>{% endfor -%}
+</div>
+<div class="share-preview"><img id="shareImg" alt="" width="1080" height="1350"><div class="share-actions"><button class="btn" type="button" id="shareSave">Save image</button><button class="btn ghost" type="button" id="shareCopy">Copy text</button><button class="btn ghost" type="button" id="shareNative">Share…</button><button class="btn ghost" type="button" id="shareColour">Change colour</button></div><div class="status" id="shareStatus" role="status"></div></div>
+</div>
+</div>
+<script type="application/json" id="factsData">{{ facts | json | safe }}</script>
+</section>

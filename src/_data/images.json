@@ -1,0 +1,50 @@
+{
+  "garvey": {
+    "alt": "Marcus Garvey in uniform, 1924",
+    "caption": "Marcus Garvey, photographed on 5 August 1924.",
+    "credit": "Photo: Library of Congress, via <a href=\"https://commons.wikimedia.org/wiki/File:Marcus_Garvey_1924-08-05.jpg\" rel=\"noopener noreferrer\" target=\"_blank\">Wikimedia Commons</a>. Public domain.",
+    "plan": "Wikimedia Commons, public domain"
+  },
+  "coronation": {
+    "alt": "Haile Selassie at his coronation in Addis Ababa, 1930",
+    "caption": "The coronation of Haile Selassie I, 2 November 1930.",
+    "credit": "",
+    "plan": "Wikimedia Commons, public domain"
+  },
+  "jamaica-hills": {
+    "alt": "Green, forested hills in Jamaica under a blue sky",
+    "caption": "Jamaica's hill country. Pinnacle stood in similar land in St Catherine.",
+    "credit": "Photo: <a href=\"https://unsplash.com/@marcbabin?utm_source=groundation&utm_medium=referral\" rel=\"noopener noreferrer\" target=\"_blank\">Marc Babin</a> on Unsplash.",
+    "plan": "Unsplash"
+  },
+  "kingston": {
+    "alt": "Aerial view of Red Hills Road, Kingston, with buildings and hills behind",
+    "caption": "Red Hills Road, Kingston. The city where the movement grew after Pinnacle.",
+    "credit": "Photo: <a href=\"https://unsplash.com/@caidrro?utm_source=groundation&utm_medium=referral\" rel=\"noopener noreferrer\" target=\"_blank\">Caidrro</a> on Unsplash.",
+    "plan": "Unsplash"
+  },
+  "drums": {
+    "alt": "Hand drums of the Nyabinghi style",
+    "caption": "Nyabinghi drums: bass, funde and repeater.",
+    "credit": "",
+    "plan": "Wikimedia Commons or Unsplash"
+  },
+  "ital-market": {
+    "alt": "Two green breadfruit hanging from a tree among large leaves",
+    "caption": "Breadfruit, roasted whole in the fire, is a staple of the ital table.",
+    "credit": "Photo: <a href=\"https://unsplash.com/@chwdy?utm_source=groundation&utm_medium=referral\" rel=\"noopener noreferrer\" target=\"_blank\">Diwei Zhu</a> on Unsplash.",
+    "plan": "Unsplash"
+  },
+  "menen": {
+    "alt": "Empress Menen Asfaw",
+    "caption": "Empress Menen Asfaw, held up by many Rasta women as Queen Omega.",
+    "credit": "Photo via <a href=\"https://commons.wikimedia.org/wiki/File:Empress_Menen_Asfaw_with_Crown.jpg\" rel=\"noopener noreferrer\" target=\"_blank\">Wikimedia Commons</a>.",
+    "plan": "Wikimedia Commons, public domain"
+  },
+  "ethiopia": {
+    "alt": "A waterfall in a deep green valley in the Ethiopian highlands",
+    "caption": "The Ethiopian highlands at Debre Libanos. Shashamane lies further south, in the Rift Valley.",
+    "credit": "Photo: <a href=\"https://unsplash.com/@yohannesminas?utm_source=groundation&utm_medium=referral\" rel=\"noopener noreferrer\" target=\"_blank\">Yohannes Minas</a> on Unsplash.",
+    "plan": "Unsplash"
+  }
+}

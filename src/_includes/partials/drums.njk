@@ -1,0 +1,16 @@
+<div class="drum-stage" id="drumStage">
+{%- for d in drums %}
+{%- set r = d.size %}
+<div class="drum" id="drum-{{ d.id }}" data-drum="{{ d.id }}">
+<svg viewBox="-110 -110 220 220" aria-hidden="true"><circle class="ring" r="{{ r + 6 }}" fill="none" stroke="{{ d.rim }}" stroke-width="3"/><g class="head"><circle r="{{ r + 8 }}" fill="{{ d.rim }}"/><circle r="{{ r }}" fill="#f4ead4"/><circle r="{{ r * 0.62 }}" fill="none" stroke="#c2b392" stroke-width="2" opacity=".6"/></g></svg>
+<h3>{{ d.name }}</h3><p>{{ d.d }}</p>
+<label for="on-{{ d.id }}"><input type="checkbox" id="on-{{ d.id }}" checked> Playing</label>
+</div>
+{%- endfor %}
+</div>
+<div class="controls">
+<button class="big-btn" type="button" id="drumPlay" aria-pressed="false"><span id="drumIcon" aria-hidden="true">▶</span><span id="drumLabel">Play the rhythm</span></button>
+<label class="ctl" for="tempo">Tempo <input type="range" id="tempo" min="54" max="96" value="70"> <span id="tempoVal" class="tabular">70</span> bpm</label>
+<label class="ctl" for="vol">Volume <input type="range" id="vol" min="0" max="100" value="70"></label>
+</div>
+<p class="note" style="text-align:center">Sound plays only when you press play. Synthesised in your browser; nothing is downloaded.</p>

@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+---
+<article class="prose-page">
+  <div class="in">
+    <div class="eyebrow">{{ eyebrow or site.name }}</div>
+    <h1>{{ title }}</h1>
+    {% if updated %}<p class="updated">Last updated {{ updated }}</p>{% endif %}
+    <div class="prose">
+{{ content | safe }}
+    </div>
+  </div>
+</article>

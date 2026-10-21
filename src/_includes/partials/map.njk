@@ -1,0 +1,18 @@
+<div class="map-box">
+<svg viewBox="0 0 1000 347" id="mapSvg" role="group" aria-label="World map of Rastafari communities. Use the list of places below the map.">
+<path class="map-dots" d="{{ mapdots }}"/>
+<g id="arcs">
+{%- set k = places[0] -%}
+{%- for p in places %}{% if not loop.first %}<path class="arc" data-id="{{ p.id }}" d="M{{ k.x }} {{ k.y }} Q{{ p.mx }} {{ p.my }} {{ p.x }} {{ p.y }}"/>{% endif %}{% endfor -%}
+</g>
+<g id="pins">
+{%- for p in places %}<g class="pin{% if loop.index0 == 4 %} on{% endif %}" data-id="{{ p.id }}" data-i="{{ loop.index0 }}" aria-hidden="true"><circle class="halo" cx="{{ p.x }}" cy="{{ p.y }}" r="11"/><circle class="core" cx="{{ p.x }}" cy="{{ p.y }}" r="6"/><text x="{{ p.x + p.dx }}" y="{{ p.y + p.dy }}" text-anchor="{{ p.anchor }}">{{ p.lab }}</text></g>{% endfor -%}
+</g>
+</svg>
+</div>
+<div class="place-list" id="placeList" role="tablist" aria-label="Places">
+{%- for p in places %}<button type="button" class="chip" role="tab" id="ptab-{{ p.id }}" aria-controls="place-{{ p.id }}" aria-selected="{{ 'true' if loop.index0 == 4 else 'false' }}" tabindex="{{ '0' if loop.index0 == 4 else '-1' }}" data-i="{{ loop.index0 }}">{{ p.name }}</button>{% endfor -%}
+</div>
+{%- for p in places %}
+<div class="place-card" role="tabpanel" id="place-{{ p.id }}" aria-labelledby="ptab-{{ p.id }}"{% if loop.index0 != 4 %} hidden{% endif %}><div><h2>{{ p.name }}</h2><div class="meta">{{ p.country }} · {% if p.since.length == 4 %}from {{ p.since }}{% else %}since the {{ p.since }}{% endif %}</div></div><p>{{ p.text }}</p></div>
+{%- endfor %}

@@ -1,0 +1,5 @@
+<div class="debates" id="debateList">
+{%- for d in debates %}
+<div class="debate"><button type="button" aria-expanded="{{ 'true' if loop.first else 'false' }}" aria-controls="deb-{{ loop.index0 }}"><h2>{{ d.question }}</h2><span class="sign" aria-hidden="true">+</span></button><div class="debate-body" id="deb-{{ loop.index0 }}"{% if not loop.first %} hidden{% endif %}><p class="muted read">{{ d.context }}</p><div class="sides"><div><h3>One view</h3><p>{{ d.one }}</p></div><div><h3>Another view</h3><p>{{ d.another }}</p></div></div></div></div>
+{%- endfor %}
+</div>

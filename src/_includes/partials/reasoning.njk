@@ -1,0 +1,10 @@
+<section class="sec reasoning" id="reasoning" aria-labelledby="h-reason">
+<div class="in">
+<div class="eyebrow">Reasoning of the day · <span id="reasonDate" class="tabular"></span></div>
+<h2 class="reason-word" id="h-reason">{{ reasonings[0].word }}</h2>
+<p class="reason-text" id="reasonText">{{ reasonings[0].text }}</p>
+<p class="reason-q" id="reasonQ">Reason on this: {{ reasonings[0].question }}</p>
+<div class="reason-nav"><button type="button" id="reasonPrev">← Previous</button><button type="button" id="reasonNext">Next →</button><button type="button" id="reasonToday">Today's</button><span id="reasonCount" class="tabular"></span></div>
+</div>
+<script type="application/json" id="reasonData">{{ reasonings | json | safe }}</script>
+</section>

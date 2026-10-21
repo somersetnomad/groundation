@@ -1,0 +1,24 @@
+---
+layout: layouts/base.njk
+---
+{%- set chs = collections.chapters -%}
+{%- set idx = 0 -%}
+{%- for c in chs %}{% if c.url == page.url %}{% set idx = loop.index0 %}{% endif %}{% endfor -%}
+<section class="chapter-head" aria-labelledby="ch-title">
+  <canvas class="embers" aria-hidden="true"></canvas>
+  <div class="in">
+    <div class="eyebrow">Chapter {{ order | pad }} · {{ navLabel }}</div>
+    <h1 id="ch-title" class="ch-title">{{ headline | safe }}</h1>
+    {% if lede %}<p class="lede read">{{ lede }}</p>{% endif %}
+  </div>
+  <div class="bands bands-thin" aria-hidden="true"><i></i><i></i><i></i></div>
+</section>
+<div class="chapter-body">
+{{ content | safe }}
+</div>
+<nav class="ch-nav" aria-label="Chapter navigation">
+  <div class="in">
+    {%- if idx > 0 %}{% set p = chs[idx-1] %}<a class="ch-prev" href="{{ p.url }}"><span>← Chapter {{ p.data.order | pad }}</span><b>{{ p.data.navLabel }}</b></a>{% else %}<a class="ch-prev" href="/"><span>← Back to</span><b>Home</b></a>{% endif %}
+    {%- if idx < chs.length - 1 %}{% set n = chs[idx+1] %}<a class="ch-next" href="{{ n.url }}"><span>Chapter {{ n.data.order | pad }} →</span><b>{{ n.data.navLabel }}</b></a>{% else %}<a class="ch-next" href="/articles/"><span>Keep reading →</span><b>Articles</b></a>{% endif %}
+  </div>
+</nav>

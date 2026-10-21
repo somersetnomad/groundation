@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{%- set pageTitle = (seoTitle or title) + " · " + site.name if (seoTitle or title) and page.url != "/" else site.name + ": " + site.tagline %}
+{%- set pageDesc = description or site.description %}
+<title>{{ pageTitle }}</title>
+<meta name="description" content="{{ pageDesc }}">
+<link rel="canonical" href="{{ page.url | absolute(site.url) }}">
+<meta name="theme-color" content="#130e09">
+<meta property="og:type" content="{{ 'article' if layout == 'layouts/article.njk' else 'website' }}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{{ pageTitle }}">
+<meta property="og:description" content="{{ pageDesc }}">
+<meta property="og:url" content="{{ page.url | absolute(site.url) }}">
+<meta property="og:image" content="{{ '/assets/img/og.png' | absolute(site.url) }}">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/big-shoulders-display-latin-900-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/literata-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="sitemap" href="/sitemap.xml">
+{%- set ldType = "Article" if (layout == 'layouts/article.njk' or layout == 'layouts/chapter.njk') else "WebSite" -%}
+{%- set ldUrl = page.url | absolute(site.url) -%}
+{%- set ldHead = title or site.name -%}
+<script type="application/ld+json">{{ ldType | ld(pageTitle, ldHead, pageDesc, ldUrl, site.lang, site.name) | safe }}</script>
+</head>
+<body class="{{ bodyClass }}">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top" id="top">
+  <div class="in">
+    <a class="brand" href="/" aria-label="{{ site.name }} home"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span class="brand-text">{{ site.name }}</span></a>
+    <nav class="nav" aria-label="Chapters">
+      {%- for ch in collections.chapters %}
+      <a href="{{ ch.url }}" data-sec="{{ ch.data.key }}"{% if page.url == ch.url %} aria-current="page" class="active"{% endif %}><span class="dot"></span>{{ ch.data.navLabel }}</a>
+      {%- endfor %}
+      <a href="/articles/"{% if page.url.startsWith('/articles/') %} aria-current="page" class="active"{% endif %}>Articles</a>
+    </nav>
+    <a class="data-btn" href="/your-data/">Your data</a>
+  </div>
+  <div class="progress" id="readProgress" aria-hidden="true"></div>
+</header>
+
+<main id="main" data-page="{{ key or 'page' }}">
+{{ content | safe }}
+</main>
+
+<footer>
+  <div class="in">
+    <div class="foot">
+      <div>
+        <a class="brand" href="/"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>{{ site.name }}</a>
+        <p class="small muted" style="margin-top:14px;max-width:44ch">An independent educational guide to the history and living practice of Rastafari. No accounts, no cookies, no analytics. Videos load from YouTube only when you press play.</p>
+        <p class="small" style="margin:14px 0 4px">Corrections and contact</p>
+        <div class="email-row"><a href="mailto:{{ site.email }}"><code>{{ site.email }}</code></a><button class="chip" type="button" data-copy="{{ site.email }}">Copy</button></div>
+      </div>
+      <div>
+        <h4>Chapters</h4>
+        <ul>{% for ch in collections.chapters %}<li><a href="{{ ch.url }}">{{ ch.data.navLabel }}</a></li>{% endfor %}</ul>
+      </div>
+      <div>
+        <h4>Policies</h4>
+        <ul>
+          <li><a href="/privacy/">Privacy Policy</a></li>
+          <li><a href="/terms/">Terms of Use</a></li>
+          <li><a href="/cultural-respect/">Cultural Respect</a></li>
+          <li><a href="/accessibility/">Accessibility</a></li>
+          <li><a href="/sources/">Sources and Credits</a></li>
+          <li><a href="/your-data/">Your data settings</a></li>
+          <li><a href="/articles/">All articles</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="fineprint"><span>© <span class="tabular" data-year>2026</span> {{ site.name }}. Text and illustrations original to this site unless credited.</span><span>Not affiliated with any Rastafari Mansion or organisation.</span></div>
+  </div>
+</footer>
+<script src="/assets/js/gsap.min.js" defer></script>
+<script src="/assets/js/ScrollTrigger.min.js" defer></script>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>

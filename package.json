@@ -1,0 +1,13 @@
+{
+  "name": "groundation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Groundation: an independent, tracking-free guide to Rastafari.",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.0.0"
+  }
+}

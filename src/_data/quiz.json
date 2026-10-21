@@ -1,0 +1,112 @@
+[
+  {
+    "q": "Where was the Holy Piby, an early “Black man's Bible”, first published?",
+    "options": [
+      "Kingston, Jamaica",
+      "Addis Ababa, Ethiopia",
+      "Newark, New Jersey",
+      "London, England"
+    ],
+    "answer": 2,
+    "explain": "Robert Athlyi Rogers published it in Newark in 1924. It later shaped the preaching of Leonard Howell."
+  },
+  {
+    "q": "What was Pinnacle?",
+    "options": [
+      "A reggae studio",
+      "The first Rastafari commune",
+      "A Bobo Shanti temple",
+      "A Kingston prison"
+    ],
+    "answer": 1,
+    "explain": "Leonard Howell founded the commune around 1940. Police raided it repeatedly until it was broken up in 1954."
+  },
+  {
+    "q": "What does Grounation Day (21 April) commemorate?",
+    "options": [
+      "Selassie's coronation",
+      "Bob Marley's birth",
+      "Selassie's 1966 visit to Jamaica",
+      "The founding of the UNIA"
+    ],
+    "answer": 2,
+    "explain": "A vast crowd met Haile Selassie at Palisadoes airport on 21 April 1966."
+  },
+  {
+    "q": "Which Mansion assigns members to a tribe of Israel by birth month?",
+    "options": [
+      "Nyabinghi",
+      "Bobo Shanti",
+      "Twelve Tribes of Israel",
+      "Ethiopian World Federation"
+    ],
+    "answer": 2,
+    "explain": "Founded by Vernon Carrington in 1968, the Twelve Tribes links each member to a tribe by birth month."
+  },
+  {
+    "q": "In Iyaric, why does “oppressor” become “downpressor”?",
+    "options": [
+      "It is easier to say",
+      "“Op” sounds like “up”, but oppression pushes people down",
+      "It comes from Amharic",
+      "It was a typo in a hymn"
+    ],
+    "answer": 1,
+    "explain": "Iyaric changes words whose sounds contradict their meaning."
+  },
+  {
+    "q": "Which drum keeps the steady heartbeat in Nyabinghi drumming?",
+    "options": [
+      "The repeater",
+      "The funde",
+      "The bass",
+      "The kettle"
+    ],
+    "answer": 1,
+    "explain": "The funde plays a steady two-stroke heartbeat; the repeater improvises above it."
+  },
+  {
+    "q": "What happened at Coral Gardens in 1963?",
+    "options": [
+      "Selassie's first visit",
+      "A mass crackdown on Rastas by the Jamaican state",
+      "The founding of the Bobo Shanti",
+      "The first reggae recording"
+    ],
+    "answer": 1,
+    "explain": "Rastas across Jamaica were rounded up, beaten and forcibly shaved. The government apologised in 2017."
+  },
+  {
+    "q": "Where in Ethiopia did Haile Selassie grant land to the diaspora?",
+    "options": [
+      "Gondar",
+      "Lalibela",
+      "Shashamane",
+      "Harar"
+    ],
+    "answer": 2,
+    "explain": "500 acres at Shashamane were granted in 1948."
+  },
+  {
+    "q": "What does “ital” come from?",
+    "options": [
+      "“Italy”",
+      "“Vital”",
+      "“Total”",
+      "An Amharic word for bread"
+    ],
+    "answer": 1,
+    "explain": "Ital is “vital” with the I-sound first: food and living that feed the life force."
+  },
+  {
+    "q": "Who became the first Rastafarian in Jamaica's Parliament?",
+    "options": [
+      "Mortimo Planno",
+      "Barbara Makeda Blake Hannah",
+      "Prince Emmanuel",
+      "Rita Marley"
+    ],
+    "answer": 1,
+    "explain": "She sat as an independent senator from 1984 to 1987."
+  }
+]

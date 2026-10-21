@@ -1,0 +1,14 @@
+<div class="mansion-tabs" role="tablist" aria-label="Mansions" id="mTabs">
+{%- for m in mansions %}
+<button class="chip" type="button" role="tab" id="mtab-{{ m.id }}" aria-controls="mpanel-{{ m.id }}" aria-selected="{{ 'true' if loop.first else 'false' }}" tabindex="{{ '0' if loop.first else '-1' }}">{{ m.name }}</button>
+{%- endfor %}
+</div>
+<p class="note" style="margin:0 0 20px">Many Rastafari belong to no Mansion at all, and some move between them.</p>
+{%- for m in mansions %}
+<div class="mansion" role="tabpanel" id="mpanel-{{ m.id }}" aria-labelledby="mtab-{{ m.id }}" tabindex="0" style="--mc:{{ m.colour }}"{% if not loop.first %} hidden{% endif %}>
+<div class="mansion-badge">{% include "partials/badge-" + m.id + ".njk" %}</div>
+<div><h2 class="mansion-name">{{ m.name }}</h2><div class="aka">{{ m.aka }}</div><p class="lede">{{ m.intro }}</p><dl class="facts">
+{%- for f in m.facts %}<dt>{{ f.label }}</dt><dd>{{ f.text }}</dd>{% endfor -%}
+</dl></div>
+</div>
+{%- endfor %}

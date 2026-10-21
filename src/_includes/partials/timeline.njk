@@ -1,0 +1,22 @@
+<section class="sec alt tl-sec" id="timeline-track" aria-label="Interactive timeline">
+<div class="in">
+<div class="tl-filter" role="group" aria-label="Filter timeline">
+<button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
+<button class="chip" type="button" data-f="faith" aria-pressed="false">Faith</button>
+<button class="chip" type="button" data-f="state" aria-pressed="false">State &amp; law</button>
+<button class="chip" type="button" data-f="africa" aria-pressed="false">Africa</button>
+<button class="chip" type="button" data-f="culture" aria-pressed="false">Culture</button>
+</div>
+</div>
+<div class="tl-wrap" id="tlWrap">
+<div class="tl-scroller" id="tlScroller" tabindex="0" aria-label="Timeline, scroll horizontally">
+<ol class="tl-track" id="tlTrack">
+{%- set cats = {"faith":["var(--green)","Faith"],"state":["var(--red)","State & law"],"africa":["var(--gold)","Africa"],"culture":["var(--ink)","Culture"]} -%}
+{%- for t in timeline %}
+<li class="tl-card" data-cat="{{ t.cat }}" style="--c:{{ cats[t.cat][0] }}"><span class="y tabular">{{ t.year }}</span><h3>{{ t.title }}</h3><p>{{ t.text }}</p><span class="tag">{{ cats[t.cat][1] }}</span></li>
+{%- endfor %}
+</ol>
+</div>
+</div>
+<div class="in"><p class="tl-hint" id="tlHint">Scroll or swipe sideways · Use arrow keys when focused</p></div>
+</section>

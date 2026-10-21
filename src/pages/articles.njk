@@ -1,0 +1,14 @@
+---
+layout: layouts/page.njk
+title: Articles
+eyebrow: Reading
+permalink: /articles/
+description: "Long reads on Rastafari history, practice and current debates."
+---
+<div class="article-list">
+{%- for a in collections.articles %}
+<a class="article-card" href="{{ a.url }}"><span class="meta">{{ a.date | dateNice }}{% if a.data.topic %} · {{ a.data.topic }}{% endif %}</span><b>{{ a.data.title }}</b><span>{{ a.data.summary }}</span></a>
+{%- else %}
+<p>No articles yet.</p>
+{%- endfor %}
+</div>

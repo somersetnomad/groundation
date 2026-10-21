@@ -1,0 +1,23 @@
+[
+  {
+    "id": "bass",
+    "name": "Bass",
+    "d": "The largest drum. Heavy strokes on the first beat, a muted touch on the third.",
+    "rim": "#e4372f",
+    "size": 96
+  },
+  {
+    "id": "funde",
+    "name": "Funde",
+    "d": "The steady heartbeat: a soft stroke then a strong one, on every beat.",
+    "rim": "#f5b90a",
+    "size": 76
+  },
+  {
+    "id": "rep",
+    "name": "Repeater",
+    "d": "The smallest and highest. It improvises and talks over the pulse.",
+    "rim": "#2fb866",
+    "size": 58
+  }
+]

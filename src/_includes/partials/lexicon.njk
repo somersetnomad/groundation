@@ -1,0 +1,11 @@
+<div class="lex">
+<div>
+<div class="lex-list" id="lexList" role="group" aria-label="Iyaric words">
+{%- for w in words %}<button type="button" class="word" aria-pressed="{{ 'true' if loop.first else 'false' }}" aria-controls="lex-{{ loop.index0 }}">{{ w.word }}</button>{% endfor -%}
+</div>
+<p class="note">Tap a word to see where it comes from and how it is used.</p>
+</div>
+<div class="lex-cards" aria-live="polite">
+{%- for w in words %}<div class="lex-card" id="lex-{{ loop.index0 }}"{% if not loop.first %} hidden{% endif %}><div class="w">{{ w.word }}</div><div class="from">{{ w.from }}</div><p>{{ w.meaning }}</p><p class="use">{{ w.usage }}</p></div>{% endfor -%}
+</div>
+</div>
