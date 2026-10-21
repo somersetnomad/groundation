@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  # If GitHub's built-in branch publisher also runs, redeploy afterwards so
+  # the built site always wins over the raw source files.
+  workflow_run:
+    workflows: ["pages-build-deployment", "pages build and deployment"]
+    types: [completed]
 
 permissions:
   contents: read
